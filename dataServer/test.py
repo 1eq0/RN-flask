@@ -12,7 +12,7 @@ mp_pose = mp.solutions.pose
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture('squat.mp4')
+        self.video = cv2.VideoCapture(0)
     def __del__(self):
         self.video.release()
     def get_frame(self, reps, status):
